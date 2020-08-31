@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+    <meta charset='UTF-8'/>
+        <title> Italy Test </title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    
+    <style>
+        body{
+            font-family: cursive;
+            font-size : 100%;
+            line-height: 1.5;
+            letter-spacing: 0.01cm;
+        }
+        h1,h2,h3,h4{
+            font-family: 'Open Sans', sans-serif;
+            
+        }
+        
+        .mainbox {
+            box-sizing: border-box;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+    
+        }
+        
+        .col{
+            box-sizing: border-box;
+            width: 33.33%;
+            float: left;
+            margin-top: 13px;
+        }
+        
+        
+        .col1{
+            box-sizing: border-box;
+            width: 66.66%;
+            float: right;
+            margin-top: 13px;
+            align-self: auto;
+        }
+        
+        .col2{
+            box-sizing: border-box;
+            width: 34.5%;
+            float: right;
+            margin-right: 13px;
+            margin-top: 13px;
+            margin-left: 0px;
+            margin-bottom: 0px;
+            
+        }
+        
+        .col3{
+            box-sizing: border-box;
+            width: 61.15%;
+            float: left;
+            margin-top: 13px;
+        }
+        .col4{
+            box-sizing: border-box;
+            float: left;
+            width: 61.15%;
+        }
+        
+        .col5{
+            box-sizing: border-box;
+            width: 58%;
+            float: right;
+            margin-top: 13px;
+            margin-right: 1px;
+        }
+        
+        .col6{
+            box-sizing: border-box;
+            width: 58%;
+            float: right;
+            margin-right: 13px;
+        }
+        .col8{
+            width: 776px;
+            margin-top: 13px;
+            float: left;
+        }
+        .col7{
+            margin-right: 13px;
+            margin-top: 13px;
+            overflow: hidden;
+        }
+        .img-responsive {
+            
+            max-width: 100%;
+            margin: auto;
+            display: block;
+        }
+        
+                
+        .img-responsive1 {
+            
+            max-width: 95%;
+            display: block;
+            margin: auto
+        }
+        
+        .img-responsive2 {
+            
+            max-width: 100%;
+            display: block;
+        }
+        
+        .img-responsive3 {            
+            max-width: 100%;
+            display: block;
+        }
+        
+        .img-responsive4 {
+            display: block;
+            max-width: 100%;
+        }
+        
+        .img-responsive5 {
+            margin-left: 13px;
+            max-width: 95%;
+            display: block;
+        }
+
+        .crop{
+            height: 0px;
+            box-sizing: border-box;
+            width: 40%;
+            float: left;
+            margin-top: 13px;
+        }
+        
+        .circle{
+            width: 250px;
+            height: 250px;
+            object-fit:cover;
+            border-radius:50%;
+            float: right;
+            margin-right: 13px;
+            margin-top: 13px;
+        }
+
+        
+        .container-div{
+            border: 2px solid white;
+            overflow: hidden;
+        }
+        
+        .nav{
+            background-color: rgb(108,192,219);
+            font-size: 1.5em;
+            margin-top: 0px;
+            color: rgb(0,0,0);
+            text-align: center;
+            top: 0;
+            width: 96%; 
+            position: fixed;
+            overflow: hidden;
+            padding: 3px;
+
+        }
+
+        .nav  li{
+            display: inline;
+        }
+        .nav  li a{
+            padding: 10px;
+            display: inline-block;
+        }
+
+        a:link{
+            text-decoration: none;
+            background-color: ;
+            color: rgb(0,0,0);
+        }
+
+        a:visited{
+            background-color: rgb(219, 135,108);
+            color: rgb(0,0,0)
+
+        }
+
+        a:cursor{
+            background-color: rgb(219, 135,108);
+            color: rgb(255,255,255);
+        }
+        a:hover {
+            background: rgb(219, 135,108);
+            color: black;
+        }
+        .main {
+            margin-top: 30px;
+        }
+        
+        .footer{
+            background-color: rgb(108,192,219);
+            color: rgb(0, 0, 0);
+            text-align: left;
+            float: left;
+            display: block;
+            padding: 15px;
+            width: 96%;
+        }
+        .centered {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 150px;
+            text-decoration-color: (178, 224, 250);
+            font-family: cursive;
+            opacity: 0.8;
+            
+        }
+        .bottom {
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            text-decoration-color:(178, 224, 250);
+            font-family: cursive;
+            opacity: 0.8;
+            text-align: center;
+            max-width: 600px;
+            
+        }
+        
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin-right: 15px;
+            margin-top: 13px;
+        }
+
+/* Hide the images by default */
+        .mySlides {
+            display: none;
+        }
+
+/* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+/* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+/* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+/* Caption text */
+        .text {
+            color: rgb(219, 135,108);
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+/* Number text (1/3 etc) */
+        .numbertext {
+            color: rgb(219, 135,108);
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+/* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+/* Fading animation */
+        .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+    </style>
+    </head>
+    
+    <div class="mainbox">
+        
+        <div class="container-div">
+        <!--Navigation-->
+        <ul class= "nav">
+        <li> <a href=#Milan> Milan
+            </a></li>
+        <li> <a href=#cinque> Cinque Terre
+            </a></li>
+        <li> <a href=#positano> Positano
+            </a></li>
+        <li> <a href=#ski> Bardonecchia 
+            </a></li>
+        </ul>
+        </div>
+   
+        <div class="container-div"> 
+        <div class="col7">
+    <img class="img-responsive2" src="Images/church-milan-2.jpg" alt="Panorama Image of the ski slope">
+            </div>
+        </div>
+
+    <h3> Places </h3>
+        
+        <div class="container-div">
+        
+        <div id="Milan" class="col">     
+        <img class="img-responsive" src="Images/sunset_on_Milan_.jpg" alt="Milan Sunset">
+        </div>
+        <div class="col1">
+        <img class="img-responsive1" src="Images/landscape-church.jpg" alt="Church Landscape">
+        </div>
+        
+        </div>
+        
+        <div class="container-div">
+        <img class="circle" src="Images/churchside.jpg" alt="Church Side">
+            
+        
+        <div class="col4">    
+        <h4 > Milan </h4>
+    
+        <p>Milan is the fashion capital of the world, however, there is much more to this Italian city. We were here for three days and a must-do was the main church. We stopped here just before sunset and enjoyed the amazing view from the top deck. With views of the whole city including the old malls and feature tiles. While we were here we also visited the Alfa Romeo museum, perfect for car-lovers alike, this had all the models dating back to when they started in 1910. </p>
+        </div>
+        </div>
+             
+        <div class="container-div">
+
+        <div id="cinque" class="col3">     
+        <img class="img-responsive2" src="Images/Cinqueterre-trees.jpg" alt="the beach at the furtest village of the Cinque Terre">
+        </div>
+            
+        <div class="col2">     
+        <img class="img-responsive3" src="Images/cross-cinqueterre.jpg" alt="Cross on the hil overlooking the ocean">
+        </div>
+        </div>
+        
+        
+        <div class="container-div">
+        <div class="col5">
+        <img class="img-responsive1" src="Images/CINQUE_TERRE.JPG" alt="Church Landscape">
+        </div>
+        <div class="col5">
+        <img class="img-responsive1" src="Images/point-cinqueterre.jpg" alt="Church Landscape">
+        </div>
+    
+    
+    <h4 > Cinque Terre</h4>
+    
+    <p>
+        The Cinque Terre are a well renowned Italian Landmark. Know for its colourful quaint villages and seaside location. The colours are bright, yellows, reds, pinks and orange. The rush time for this area is in the middle of summer with over 2.5 million people travelling to visit it. In the offseason it is just as amazing, however, you will need to check if all the tracks are open and the weather. You can walk both detections.  If you are feeling tired there is also a train running along the coast that stops in all villages, and you can stay the night in any village. If you are feeling adventurous there are many tracks up the hill, to smaller villages with petite churches and views of the coast. The 5 villages are Monterosso al Mare, Vernazza, Corniglia, Manarola and Riomaggiore. Hence the name Cinque meaning five and Terre meaning earth and terraces.
+
+Top tip for this location is to walk slowly and stop at all the villages (as the trains run into the night) try some delicious Italian delicacies
+.</p>
+        </div>
+        
+        <div id="positano" class="container-div">
+        <div class="crop">     
+        <img class="img-responsive4" src="Images/positano-sunset.jpg" alt="Milan Sunset">
+        </div>
+        <div class="col5">
+        <img class="img-responsive1" src="Images/positano-deck.jpg" alt="Church Landscape">
+        </div>
+        </div>
+        
+        
+    <div class="container-div">  
+        
+       <div class="col5">
+        <img class="img-responsive1" src="Images/positano-beach.jpg" alt="Church Side">
+        </div>
+    
+    <h4 > Positano</h4>
+        
+        <p> 
+This is a small village on the Amalfi coast with an amazing atmosphere.  This has beautiful views and rugged country. If you are up for a walk, you can do the Path of the Gods, a scenic trail with views into the horizon. 
+</p>
+    </div>
+            
+    <div id="ski" class="container-div"> 
+        <div class="col7">
+    <img class="img-responsive2" src="Images/ski.jpg" alt="Panorama Image of the ski slope">
+        </div>
+        </div>
+        <div class="container-div"> 
+        <div class="col5">
+        <img class="img-responsive1" src="Images/italian-moutian.jpg" alt="Church Side">
+        </div>
+        <div class="crop">     
+        <img class="img-responsive4" src="Images/IMG_3770%20(2).jpg" alt="Milan Sunset">
+        </div>
+        </div>
+        <div class="container-div">    
+        <img class="circle" src="Images/mountiAN.jpg" alt="Milan Sunset">
+    <h4 > Bardoneccia</h4>
+        
+        <p>
+Italy isn’t normally the place you would associate with skiing, however with its picture-perfect mountains, this is definitely the place to go. Whether you are a beginner or and pro, there is something for everybody and even cafes and restaurants halfway up. 
+ </p>
+
+        </div>
+        
+    <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 9</div>
+    <img src="Images/church-front.jpg" style="width:100%">
+    <div class="text">Front of Church in Milan</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 9</div>
+    <img src="Images/car.jpg" style="width:100%">
+    <div class="text">Car from the Alfa Museum</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 9</div>
+    <img src="Images/chocolate-tart.JPG" style="width:100%">
+    <div class="text">Chocolate tart</div>
+  </div>
+        
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 9</div>
+    <img src="Images/NONNO-PIZZA.JPG" style="width:100%">
+    <div class="text">My Nonno and I enjoying Pizza in Positano</div>
+  </div>
+        
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 9</div>
+    <img src="Images/Last_supper.jpg" style="width:100%">
+    <div class="text">The Last Supper in Milan</div>
+  </div>
+        
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 9</div>
+    <img src="Images/Milan-mall.jpg" style="width:100%">
+    <div class="text">The famous malls in Milan</div>
+  </div>
+        
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 9</div>
+    <img src="Images/positano.jpg" style="width:100%">
+    <div class="text">The famous malls in Milan</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 9</div>
+    <img src="Images/stepple.jpg" style="width:100%">
+    <div class="text">The famous malls in Milan</div>
+  </div>
+        
+  <div class="mySlides fade">
+    <div class="numbertext">9 / 9</div>
+    <img src="Images/sunset-italy.JPG" style="width:100%">
+    <div class="text">The famous malls in Milan</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+    <script>
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+</div>
+    <div class="mainbox">
+    <p class="footer"> &copy; Grace Cinque</p> 
+    </div>
+</html> 
+
+    
+    

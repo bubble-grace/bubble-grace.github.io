@@ -1,0 +1,14 @@
+[0822/101411.406:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0822/101414.846:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0823/233922.049:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0824/000630.509:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0824/083847.727:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0824/083847.903:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0824/161821.353:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0825/093813.909:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0825/162337.018:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0826/104810.271:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0826/104812.645:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0826/194732.477:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0826/194735.851:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0827/001402.411:ERROR:local_storage_context_mojo.cc(706)] Lost connection to database
