@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+    <meta charset='UTF-8'/>
+        <title> Italy Test </title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+
+    
+    <style>
+        body{
+            font-family: cursive;
+            font-size : 100%;
+            line-height: 1.5;
+            letter-spacing: 0.01cm;
+        }
+        h1,h2,h3,h4{
+            font-family: 'Poppins', sans-serif;
+            
+        }
+        
+        p{
+            font-size: 100%;
+            font-family: 'Poppins';
+        }
+        
+        .mainbox {
+            box-sizing: border-box;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+    
+        }
+        
+        .col{
+            box-sizing: border-box;
+            width: 32.5%;
+            float: left;
+            margin-top: 13px;
+
+            
+        }
+        
+        
+        .col1{
+            box-sizing: border-box;
+            width: 65%;
+            float: left;
+            margin-top: 13px;
+            align-self: auto;
+            margin-left: 2.5%;
+    
+        }
+        
+        .col2{
+            box-sizing: border-box;
+            width: 32.5%;
+            float: right;
+            margin-top: 13px;
+            margin-left: 2.5%;
+            
+        }
+        
+        .col3{
+            box-sizing: border-box;
+            width: 65%;
+            float: left;
+            margin-top: 13px;
+            
+        }
+        .col4{
+            box-sizing: border-box;
+            float: left;
+            width: 61.15%;
+        }
+        
+        .col5{
+            box-sizing: border-box;
+            width: 58%;
+            float: right;
+            margin-top: 13px;
+            margin-right: 1px;
+        }
+        
+        .col6{
+            box-sizing: border-box;
+            width: 58%;
+            float: right;
+            margin-right: 13px;
+        }
+        .col8{
+            width: 776px;
+            margin-top: 13px;
+            float: left;
+        }
+        .col7{
+            margin-top: 13px;
+            overflow: hidden;
+        }
+        .img-responsive {
+            
+            max-width: 100%;
+            margin: auto;
+            display: block;
+        }
+        
+                
+        .img-responsive1 {
+            max-width: 100%;
+            display: block;
+            margin: auto
+        }
+        
+        .img-responsive2 {
+            
+            max-width: 100%;
+            display: block;
+        }
+        
+        .img-responsive3 {            
+            max-width: 100%;
+            display: block;
+        }
+        
+        .img-responsive4 {
+            display: block;
+            max-width: 100%;
+        }
+        
+        .img-responsive5 {
+            margin-left: 13px;
+            max-width: 95%;
+            display: block;
+        }
+
+        .crop{
+            height: 0px;
+            box-sizing: border-box;
+            width: 40%;
+            float: left;
+            margin-top: 13px;
+        }
+        
+        .circle{
+            width: 250px;
+            height: 250px;
+            object-fit:cover;
+            border-radius:50%;
+            float: right;
+            margin-top: 13px;
+        }
+
+        
+        .container-div{
+            border: 2px solid white;
+            overflow: hidden;
+        }
+        
+        .nav{
+            background-color: rgb(108,192,219);
+            font-size: 1.5em;
+            margin: 0;
+            padding:0;
+            color: rgb(0,0,0);
+            font-family: 'Poppins';
+            text-align: center;
+            top: 0;
+            left:0;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+
+        }
+
+        .nav  li{
+            display: inline;
+        }
+        .nav  li a{
+            padding: 10px;
+            display: inline-block;
+        }
+
+        a:link{
+            text-decoration: none;
+            color: rgb(0,0,0);
+        }
+
+        a:visited{
+            background-color: rgb(219, 135,108);
+            color: rgb(0,0,0)
+
+        }
+
+
+        a:hover {
+            background: rgb(219, 135,108);
+            color: black;
+        }
+        .main {
+            margin-top: 30px;
+        }
+        
+        .footer{
+            background-color: rgb(108,192,219);
+            color: rgb(0, 0, 0);
+            text-align: left;
+            float: left;
+            display: block;
+            padding: 15px;
+            width: 99%;
+            
+        }
+       
+        
+      * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  -ms-flex: 33.3%; /* IE10 */
+  flex: 33.3%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding:0; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  /*width: 100%;*/
+  height: 80vh;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #ccc;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+    </style>
+    </head>
+    <body>
+    
+            <div class="container-div">
+        <!--Navigation-->
+        <ul class= "nav">
+        <li> <a href=#Milan> Milan
+            </a></li>
+        <li> <a href=#cinque> Cinque Terre
+            </a></li>
+        <li> <a href=#positano> Positano
+            </a></li>
+        <li> <a href=#ski> Bardonecchia 
+            </a></li>
+        <li> <a href=#Gallery>Gallery
+            </a></li>
+        </ul>
+        </div>
+    
+    <div class="mainbox">
+        
+
+   
+        <div class="container-div"> 
+  
+    <img class="img-responsive2" src="Images/church-milan-2.jpg" alt="Panorama Image of the ski slope">
+       
+        </div>
+        
+        <div class="container-div">
+        
+        <div id="Milan" class="col">     
+        <img class="img-responsive" src="Images/sunset_on_Milan_.jpg" alt="Milan Sunset">
+        </div>
+        <div class="col1">
+        <img class="img-responsive1" src="Images/landscape-church.jpg" alt="Church Landscape">
+        </div>
+        
+        </div>
+        
+        <div class="container-div">
+        <img class="circle" src="Images/churchside.jpg" alt="Church Side">
+            
+        
+       
+        <h3 > Milan </h3>
+    
+        <p style="width: 62%">Milan is the fashion capital of the world, however, there is much more to this Italian city. We were here for three days and a must-do was the main church. We stopped here just before sunset and enjoyed the amazing view from the top deck. With views of the whole city including the old malls and feature tiles. While we were here we also visited the Alfa Romeo museum, perfect for car-lovers alike, this had all the models dating back to when they started in 1910. </p>
+       
+        </div>
+             
+        <div class="container-div">
+
+        <div id="cinque" class="col3">     
+        <img class="img-responsive2" src="Images/Cinqueterre-trees.jpg" alt="the beach at the furtest village of the Cinque Terre">
+        </div>
+            
+        <div class="col2">     
+        <img class="img-responsive3" src="Images/cross-cinqueterre.jpg" alt="Cross on the hil overlooking the ocean">
+        </div>
+        </div>
+        
+        
+        <div class="container-div">
+        <div class="col5">
+        <img class="img-responsive1" src="Images/CINQUE_TERRE.JPG" alt="Church Landscape">
+        </div>
+        <div class="col5">
+        <img class="img-responsive1" src="Images/point-cinqueterre.jpg" alt="Church Landscape">
+        </div>
+    
+    
+    <h3 > Cinque Terre</h3>
+    
+    <p style="width: 39%">
+        The Cinque Terre are a well renowned Italian Landmark. Know for its colourful quaint villages and seaside location. The colours are bright, yellows, reds, pinks and orange and all the biuldings are painted to match. You can walk both detections.  </p>
+        
+    <p style="width: 39%">
+        If you are feeling tired there is also a train running along the coast that stops in all villages, and you can stay the night in any village. If you are feeling adventurous there are many tracks up the hill, to smaller villages with petite churches and views of the coast. The 5 villages are Monterosso al Mare, Vernazza, Corniglia, Manarola and Riomaggiore. Hence the name Cinque meaning five and Terre meaning earth and terraces.</p>
+<p style="width: 39%">
+Top tip for this location is to walk slowly and stop at all the villages (as the trains run into the night) try some delicious Italian delicacies
+.</p>
+        </div>
+        
+        <div id="positano" class="container-div">
+        <div class="crop">     
+        <img class="img-responsive4" src="Images/positano-sunset.jpg" alt="Milan Sunset">
+        </div>
+        <div class="col5">
+        <img class="img-responsive1" src="Images/positano-deck.jpg" alt="Church Landscape">
+        </div>
+        </div>
+        
+        
+    <div class="container-div">  
+        
+       <div class="col5">
+        <img class="img-responsive1" src="Images/positano-beach.jpg" alt="Church Side">
+        </div>
+    
+    <h3> Positano</h3>
+        
+        <p style="width: 39%"> 
+This is a small village on the Amalfi coast with an amazing atmosphere.  This has beautiful views and rugged country. If you are up for a walk, you can do the Path of the Gods, a scenic trail with views into the horizon. 
+</p>
+    </div>
+            
+    <div id="ski" class="container-div"> 
+        <div class="col7">
+    <img class="img-responsive2" src="Images/ski.jpg" alt="Panorama Image of the ski slope">
+        </div>
+        </div>
+        <div class="container-div"> 
+        <div class="col5">
+        <img class="img-responsive1" src="Images/italian-moutian.jpg" alt="Church Side">
+        </div>
+        <div class="crop">     
+        <img class="img-responsive4" src="Images/IMG_3770%20(2).jpg" alt="Milan Sunset">
+        </div>
+        </div>
+        <div class="container-div">    
+        <img class="circle" src="Images/mountiAN.jpg" alt="Milan Sunset">
+    <h4 > Bardoneccia</h4>
+        
+        <p style="width: 62%">
+Italy isn’t normally the place you would associate with skiing, however with its picture-perfect mountains, this is definitely the place to go. Whether you are a beginner or and pro, there is something for everybody and even cafes and restaurants halfway up. 
+ </p>
+
+        </div>
+        
+        <div id="Gallery" class="container-div">
+            
+<h3> Gallery</h3>
+<style>
+    .myImg{
+        cursor: pointer;
+        border-radius: 5px;
+        transition: 0.3s;
+    }  
+    .myImg:hover {
+        opacity: 0.7;
+    }
+    .img-responsive-modal {
+            max-height: 100%;
+            max-width:100%;
+            margin: auto;
+            display: block;
+        }
+</style>
+            
+            <div class="row">
+                <div class="column">
+                    <img class="myImg" src="Images/car.jpg" style="width: 100%" alt="A 2008 car from the Alfa Romeo Museum in Milan">
+                    <img class="myImg" src="Images/chocolate-tart.JPG" style="width: 100%" alt="A rich chocolate tart from one of the cousins">
+                    <img class="myImg" src="Images/church-front.jpg" style="width: 100%" alt="The front of the church in Milan">
+                    
+                </div>
+                <div class="column">
+                    <img class="myImg" src="Images/italian-moutian.jpg" style="width: 100%" alt="Looking down at the ski feild from a chair lift">
+                    <img class="myImg" src="Images/Last_supper.jpg" style="width: 100%" alt="The famous last supper">
+                    <img class="myImg" src="Images/NONNO-PIZZA.JPG" style="width: 100%" alt="My Nonno and I enjoying a large pizza, in Sorento/Positano.">
+
+                </div>
+                <div class="column">
+                    <img class="myImg" src="Images/sunset-italy.jpg" style="width: 100%" alt="This is my Dad and Grandad(Nonno) working in the farm as the sunsets over Positano">
+                    <img class="myImg" src="Images/stepple.jpg" style="width: 100%" alt="The side of the church in Milan">
+                    <img class="myImg" src="Images/Milan-mall.jpg" style="width: 100%" alt="One of the malls in Milan, in the heart of the old city">
+                </div>
+            </div>
+
+
+        
+    
+<!-- The Modal -->
+<div id="myModal" class="modal">
+        <div style= "text-align: right; padding: 0 80px;"> <span class="close">&times;</span> </div>
+        <div class="modal-content"> <img class="img-responsive-modal" id="img01"> </div>
+        <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+
+// get all of the html elements for the images in the gallery 
+var imgList = document.getElementsByClassName("myImg");
+
+// get places to put the images and captions in the modal
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+
+// loop through the list of the html elements and apply the click function to each of these.
+for(var i=0; i< imgList.length ; i++){
+        imgList[i].onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+}
+}
+
+
+
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+
+    <div class="mainbox">
+    <p class="footer"> &copy; Grace Cinque</p> 
+    </div>
+        </div>
+        </div>
+    </body>
+</html> 
+
+    
+    
